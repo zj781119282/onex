@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <a href="#/index" class="logo col-xs-2">
+      <a href="#/index" class="logo col-xs-4">
         <img src="../../assets/Logo.png" alt="ONEX"/>
       </a>
       <div class="lang" v-show="!withQuery">
