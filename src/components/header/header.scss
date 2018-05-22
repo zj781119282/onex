@@ -1,0 +1,67 @@
+@import "./../../style-sheets/theme";
+@import "./../../style-sheets/mixin";
+
+header {
+  * {
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      @include wh(1200px, 60px);
+
+      .logo {
+        height: 50%;
+      }
+
+      .lang {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    background-color: $deep-black-background;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: .88rem;
+      padding: 0 .4rem;
+
+
+      .logo {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        img {
+          height: 60%;
+        }
+      }
+
+      .lang {
+        font-size: .2rem;
+
+        a {
+          font-size: .2rem;
+        }
+      }
+    }
+  }
+}

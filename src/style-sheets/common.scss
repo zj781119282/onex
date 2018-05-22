@@ -1,0 +1,148 @@
+@import "theme";
+
+a.common-anchor {
+  transition: color .2s ease;
+
+  &:hover, &.active {
+    color: $theme-color;
+  }
+}
+
+article.index {
+  h2 {
+    color: $title-color;
+  }
+  p {
+    color: $desc-color;
+  }
+  &.top {
+    text-align: center;
+  }
+  &.side {
+    text-align: left;
+  }
+}
+
+article.help {
+  background-color: #fff;
+  h2 {
+    text-align: center;
+  }
+  h2, h3 {
+    font-weight: bolder;
+    color: $title-color;
+  }
+  h4 {
+    color: $title-color;
+  }
+  p.sub {
+    text-align: center;
+    color: $light-color;
+  }
+  p {
+    color: $desc-color;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  article.index {
+    width: 6rem;
+    margin: 0 auto;
+    h2 {
+      font-size: .4rem;
+    }
+    p {
+      line-height: .32rem;
+      margin-top: .3rem;
+      font-size: .2rem;
+      &:not(:first-of-type) {
+        margin-top: .1rem;
+      }
+    }
+  }
+
+  article.help {
+    padding: .4rem 0;
+    h2 {
+      font-size: .42rem;
+    }
+    h3 {
+      line-height: .6rem;
+      font-size: .36rem;
+    }
+    h4 {
+      line-height: .48rem;
+      margin-top: .2rem;
+      margin-bottom: .2rem;
+      font-size: .28rem;
+    }
+    p.sub {
+      margin-top: .2rem;
+      margin-bottom: .6rem;
+      font-size: .24rem;
+    }
+    p.lower-1 {
+      padding-left: .4rem;
+    }
+    p.lower-2 {
+      padding-left: .8rem;
+    }
+    p {
+      line-height: .4rem;
+      font-size: .24rem;
+      &:first-of-type {
+        margin-top: .6rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  article.index {
+    h2 {
+      font-size: 72px;
+    }
+    p {
+      line-height: 36px;
+      margin-top: 30px;
+      font-size: 32px;
+    }
+  }
+
+  article.help {
+    padding: 30px 0;
+    h2 {
+      font-size: 36px;
+    }
+    h3 {
+      line-height: 40px;
+      font-size: 32px;
+    }
+    h4 {
+      line-height: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    p.sub {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    p.lower-1 {
+      padding-left: 20px;
+    }
+    p.lower-2 {
+      padding-left: 40px;
+    }
+    p {
+      line-height: 30px;
+      font-size: 20px;
+      letter-spacing: 2px;
+      &:first-of-type {
+        margin-top: 30px;
+      }
+    }
+  }
+}

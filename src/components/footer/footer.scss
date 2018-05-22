@@ -1,0 +1,118 @@
+@import "./../../style-sheets/theme";
+@import "./../../style-sheets/mixin";
+
+footer {
+  background-color: $dark-background;
+
+  * {
+    color: #fff;
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .icon-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .weixin {
+      @include icon-normal('./../../assets/weixin.png');
+    }
+    .qq {
+      @include icon-normal('./../../assets/qq.png');
+    }
+    .twitter {
+      @include icon-normal('./../../assets/twitter.png');
+    }
+    .facebook {
+      @include icon-normal('./../../assets/facebook.png');
+    }
+    .send {
+      @include icon-normal('./../../assets/send.png');
+    }
+  }
+
+  p.copy {
+    color: $light-border;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  footer {
+    height: 380px;
+    padding-top: 60px;
+
+    h3 {
+      font-size: 40px;
+    }
+
+    .icon-list {
+      width: 720px;
+      margin: 0 auto;
+      margin-top: 80px;
+      .weixin {
+        @include wh(36px, 32px);
+      }
+      .qq {
+        @include wh(29px, 33px);
+      }
+      .twitter {
+        @include wh(36px, 29px);
+      }
+      .facebook {
+        @include wh(16px, 37px);
+      }
+      .send {
+        @include wh(34px, 34px);
+      }
+    }
+
+    p.copy {
+      bottom: 70px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  footer {
+    height: 3.8rem;
+    padding-top: .6rem;
+
+    .container {
+      h3 {
+        font-size: .3rem;
+      }
+
+      .icon-list {
+        padding: .8rem .6rem 0;
+        .weixin {
+          @include wh(.42rem, .36rem);
+        }
+        .qq {
+          @include wh(.36rem, .42rem);
+        }
+        .twitter {
+          @include wh(.42rem, .36rem);
+        }
+        .facebook {
+          @include wh(.24rem, .42rem);
+        }
+        .send {
+          @include wh(.42rem, .42rem);
+        }
+      }
+
+      p.copy {
+        bottom: .6rem;
+        font-size: .16rem;
+      }
+    }
+  }
+}

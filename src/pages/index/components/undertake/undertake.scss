@@ -1,0 +1,63 @@
+@import "./../../../../style-sheets/theme";
+@import "./../../../../style-sheets/mixin";
+
+section {
+  @include wh(100%, 18.75vw);
+  @include icon-normal('./../../assets/undertake.png');
+
+  * {
+    color: #fff;
+  }
+  .container {
+    margin: 0 auto;
+    h4 {
+      display: inline-block;
+      position: relative;
+      &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        top: 50%;
+        background-color: #fff;
+      }
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  section {
+    min-height: 225px;
+
+    .container {
+      width: 1200px;
+      padding-top: 2%;
+
+      h4 {
+        padding: 0 48px;
+        font-size: 28px;
+        &:before, &:after {
+          width: 40px;
+        }
+      }
+
+      p {
+        margin-top: 2%;
+        font-size: 18px;
+        &:not(:first-of-type) {
+          margin-top: .5%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
