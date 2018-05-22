@@ -2,7 +2,7 @@
   <header>
     <div class="container">
       <a href="#/index" class="logo col-xs-2">
-        <img src="../../assets/logo.png" alt="ONEX"/>
+        <img src="../../assets/Logo.png" alt="ONEX"/>
       </a>
       <div class="lang" v-show="!withQuery">
         <a href="javascript:;"
