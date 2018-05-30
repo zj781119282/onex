@@ -1,6 +1,6 @@
 <template>
   <section>
-    <a href="http://image.enyes.net/onex.apk">
+    <a href="http://file.onex.cool/ONEX-ONEXGoldWebRelease-1.20-2018-05-30.apk">
       <img v-show="!mobile" src="./../../assets/banner.png" alt="ONEX"/>
       <img v-show="mobile" src="./../../assets/banner-mobile.png" alt="ONEX"/>
     </a>
