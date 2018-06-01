@@ -9,3 +9,5 @@ const identification = {
     return !!ua.match(/mqqbrowser|qzone|qqbrowser/i);
   }
 };
+
+export default identification;
