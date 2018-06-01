@@ -10,7 +10,7 @@ export default {
     return {
       isInnerBrowser: false,
       mobile: window.innerWidth <= 768,
-      androidUrl: 'http://file.onex.cool/ONEX-ONEXGoldWebRelease-1.20-2018-05-30.apk',
+      androidUrl: 'https://onex-file.oss-ap-southeast-1.aliyuncs.com/ONEX-ONEXGoldWebRelease-1.22-2018-06-01.apk',
     }
   },
   methods: {
