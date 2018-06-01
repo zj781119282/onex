@@ -4,9 +4,11 @@ import VueI18n from 'vue-i18n';
 // 引入英文文件
 import index_en from './en_US/index.json'
 import help_en from './en_US/help.json'
+import support_en from './en_US/support.json'
 // 引入中文文件
 import index_cn from './zh_CN/index.json'
 import help_cn from './zh_CN/help.json'
+import support_cn from './zh_CN/support.json'
 
 Vue.use(VueI18n);
 
@@ -45,10 +47,12 @@ export const i18n = new VueI18n({
     'zh_CN': Object.assign(
       index_cn,
       help_cn,
+      support_cn,
     ),
     'en_US': Object.assign(
       index_en,
       help_en,
+      support_en,
     ),
   }
 });

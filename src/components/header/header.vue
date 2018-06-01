@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header v-show="showHeader">
     <div class="container">
       <a href="#/index" class="logo col-xs-4">
         <img src="../../assets/Logo.png" alt="ONEX"/>

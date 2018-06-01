@@ -9,6 +9,8 @@ const mnemonic = () => import('page/help/components/mnemonic/mnemonic.vue');
 //const privateKey = () => import('page/help/components/private-key/private-key.vue');
 const agreement = () => import('page/help/components/agreement/agreement.vue');
 const privacy = () => import('page/help/components/privacy/privacy.vue');
+const support = () => import('page/help/components/support/support.vue');
+const transactionFail = () => import('page/help/components/transaction-fail/transaction-fail.vue');
 
 Vue.use(Router);
 
@@ -56,6 +58,16 @@ const router = new Router({
           path: '/help/privacy',
           name: 'privacy',
           component: privacy,
+        },
+        {
+          path: '/help/support',
+          name: 'support',
+          component: support,
+        },
+        {
+          path: '/help/transaction-fail',
+          name: 'transaction-fail',
+          component: transactionFail,
         },
       ],
     },

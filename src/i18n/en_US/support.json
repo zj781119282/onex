@@ -1,0 +1,38 @@
+{
+  "SUPPORT": {
+    "TITLE": "ONEX Support",
+    "TITLE_1": "1. Safety Guide",
+    "ARTICLE_1_1": "1) Why must backup mnemonics!",
+    "CONTENT_1_1": "The mnemonics make it easy for users to copy backups. We recommend that users use physical media backup during backup, ie, copy mnemonic backup. This backup method can be said to have the highest security factor, completely isolated from the network, and can effectively prevent hackers from professional attacks.",
+    "ARTICLE_1_2": "2) How to properly backup mnemonics",
+    "CONTENT_1_2": "A mnemonic is a private key that is not protected by any cryptographic measures. Once someone gets your mnemonic, it is equivalent to taking control of your wallet. When using mnemonics, you need to pay attention to the following points:",
+    "CONTENT_1_2_1": "a. After creating a wallet at ONEX, be sure to back up the mnemonics in time.",
+    "CONTENT_1_2_2": "b. When backing up the mnemonic, try to use physical media backup, such as copying on a piece of paper, and then collect this piece of paper. Do not use screenshots as much as possible.",
+    "CONTENT_1_2_3": "c. To ensure that the backup mnemonics are accurate, proofread the mnemonics multiple times, and use other vocabulary-supporting purses, import the mnemonics you backed up, and verify that the back-up mnemonics are correct.",
+    "CONTENT_1_2_4": "d. Be sure to properly keep the mnemonics you have backed up. First, do a good job of network isolation measures. Second, prevent loss measures.",
+    "ARTICLE_1_3": "3) What if the password is forgotten?",
+    "CONTENT_1_3": "The only solution is to reset the new password by re-importing mnemonics.",
+    "TITLE_2": "2. Token Display Problems",
+    "ARTICLE_2_1": "1.Which tokens are supported by ONEX?",
+    "CONTENT_2_1": "ONEX is a multi-chain wallet that supports Bitcoin, Ethereum, and other wallet types, and can rapidly increase the number of tokens issued by the platform.",
+    "ARTICLE_2_2": "2. How to add assets one click",
+    "CONTENT_2_2_1": "a.Click on the \"Assets\" tab (+) icon -> Select the switch button for the asset you want to add",
+    "CONTENT_2_2_2": "b. Return to the Assets screen to view the added assets",
+    "ARTICLE_2_3": "3. Why can't I search for a token?",
+    "CONTENT_2_3": "The user can use the search add token function to display the token in its own asset list. It should be noted that all the tokens in the ONEX search list are included only for the convenience of user management and the addition of tokens. They have not passed the so-called \"review\". Users should not use it as a basis for judging the quality of tokens. .",
+    "ARTICLE_2_4": "4) How is the transfer timeout?",
+    "CONTENT_2_4": "It may be caused by the out of sync between the ONEX and the block. The time out of the transfer does not mean that the transfer failed. For details of the transaction, please go to Etherscan (https://etherscan.io/).",
+    "ARTICLE_2_5": "5) Failed to show transfer but deducted miner’s fees",
+    "CONTENT_2_5": "As long as the transaction is packaged by the miner, gas will be consumed, but due to failed packaging, or block verification failure (including insufficient Gas charges, invoking wrong contract methods, etc.), it will lead to miner's fee consumption and return the amount of reversal.",
+    "PS": "PS: The miner’s fee is charged by the miner, and ONEX does not currently charge a transfer fee.",
+    "FAIL": {
+      "TITLE": "Why show transfer timeout/failure?",
+      "ARTICLE": "Users may encounter unusual conditions such as transfer timeout/failure when transferring funds. In this case, do not panic. You can click on the [Transaction No.] [Transaction No.] to enter etherscan.io to check the specific transaction status. Generally, it may be because Caused by the following reasons:",
+      "CONTENT_1": "1.gas is not enough: this situation will show red out of gas in etherscan.io. In this case, you can select [Advanced Options] to set the gas value in the [Transfer Account] page. The recommended value is more than 100000. Some tokens can consult the project gas value;",
+      "CONTENT_2": "2. Packing Timeout: Money transfer is required for miner packing. When it encounters network congestion, it may pack time out. In this case, the transfer may not be failed. Please go to etherscan.io to inquire about the specific transfer status. If it is determined to be unsuccessful, it can be resent. Trading, otherwise please wait patiently for the miner to pack;",
+      "CONTENT_3": "3. Token is locked: Some items will have a certain currency lock mechanism at the beginning of the coin issue. In this case, only the project party can be consulted to obtain the lock currency. Under normal circumstances, the lock can only be transferred after the end of the lock period. ;",
+      "CONTENT_4": "4. Calling the contract failed: Some tokens will fail when calling the contract transfer. This can only be done by contacting the token item owner to understand the situation. It is possible that the contract has been abandoned;",
+      "CONTENT": "The user can perform the investigation according to the above situations. The etherscan tool is very powerful. You can check the transfer status of any address or token. The success or failure of the transaction depends on the transaction information displayed by Etherscan. Users can use it frequently, and click on the transaction number of [transfer details page] or [find] channel to enter etherscan."
+    }
+  }
+}
