@@ -1,0 +1,26 @@
+@import "./../../style-sheets/theme";
+@import "./../../style-sheets/mixin";
+
+.download-tip {
+  position: fixed;
+  width: 4rem;
+  right: .2rem;
+  top: .16rem;
+
+  .trangle {
+    width: 0;
+    height: 0;
+    margin-left: 90%;
+    border: .12rem solid transparent;
+    border-bottom-color: $theme-color;
+  }
+
+  .tip-content {
+    line-height: .4rem;
+    padding: .2rem;
+    border-radius: .1rem;
+    background-color: $theme-color;
+    font-size: .3rem;
+    color: #fff;
+  }
+}

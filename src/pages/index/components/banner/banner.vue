@@ -1,21 +1,13 @@
 <template>
   <section>
-    <a href="http://image.enyes.net/onex.apk">
+    <a href="javascript:;" @click>
       <img v-show="!mobile" src="./../../assets/banner.png" alt="ONEX"/>
       <img v-show="mobile" src="./../../assets/banner-mobile.png" alt="ONEX"/>
     </a>
+    <download v-show="isInnerBrowser"></download>
   </section>
 </template>
 
-<script>
-  export default {
-    name: 'banner',
-    data() {
-      return {
-        mobile: window.innerWidth <= 768,
-      }
-    },
-  }
-</script>
+<script src="./banner.js"></script>
 
 <style lang="scss" scoped></style>
