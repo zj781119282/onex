@@ -1,13 +1,21 @@
+const ua = navigator.userAgent;
+
 const identification = {
   isWx() {
-    const ua = navigator.userAgent.toLowerCase();
-    return ua.match(/MicroMessenger/i) == 'micromessenger';
+    return ua.toLowerCase().match(/MicroMessenger/i) == 'micromessenger';
   },
 
   isQQ() {
-    const ua = navigator.userAgent.toLowerCase();
-    return !!ua.match(/mqqbrowser|qzone|qqbrowser/i);
-  }
+    return !!ua.toLowerCase().match(/mqqbrowser|qzone|qqbrowser/i);
+  },
+
+  isIphone() {
+    return ua.includes('iPad') || ua.includes('iPhone');
+  },
+
+  isAndroid() {
+    return ua.includes('Android');
+  },
 };
 
 export default identification;
