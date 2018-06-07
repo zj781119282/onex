@@ -1,0 +1,13 @@
+{
+  "TRANS": {
+    "FAIL": {
+      "TITLE": "Why show transfer timeout/failure?",
+      "ARTICLE": "Users may encounter unusual conditions such as transfer timeout/failure when transferring funds. In this case, do not panic. You can click on the [Transaction No.] [Transaction No.] to enter etherscan.io to check the specific transaction status. Generally, it may be because Caused by the following reasons:",
+      "CONTENT_1": "1.gas is not enough: this situation will show red out of gas in etherscan.io. In this case, you can select [Advanced Options] to set the gas value in the [Transfer Account] page. The recommended value is more than 100000. Some tokens can consult the project gas value;",
+      "CONTENT_2": "2. Packing Timeout: Money transfer is required for miner packing. When it encounters network congestion, it may pack time out. In this case, the transfer may not be failed. Please go to etherscan.io to inquire about the specific transfer status. If it is determined to be unsuccessful, it can be resent. Trading, otherwise please wait patiently for the miner to pack;",
+      "CONTENT_3": "3. Token is locked: Some items will have a certain currency lock mechanism at the beginning of the coin issue. In this case, only the project party can be consulted to obtain the lock currency. Under normal circumstances, the lock can only be transferred after the end of the lock period. ;",
+      "CONTENT_4": "4. Calling the contract failed: Some tokens will fail when calling the contract transfer. This can only be done by contacting the token item owner to understand the situation. It is possible that the contract has been abandoned;",
+      "CONTENT": "The user can perform the investigation according to the above situations. The etherscan tool is very powerful. You can check the transfer status of any address or token. The success or failure of the transaction depends on the transaction information displayed by Etherscan. Users can use it frequently, and click on the transaction number of [transfer details page] or [find] channel to enter etherscan."
+    }
+  }
+}

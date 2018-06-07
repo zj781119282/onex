@@ -43,6 +43,9 @@ article.help {
     color: $desc-color;
     text-align: justify;
   }
+  img {
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -66,6 +69,7 @@ article.help {
     padding: .4rem 0;
     h2 {
       font-size: .42rem;
+      margin-bottom: .6rem;
     }
     h3 {
       line-height: .6rem;
@@ -95,6 +99,9 @@ article.help {
         margin-top: .6rem;
       }
     }
+    img {
+      margin: .4rem 0;
+    }
   }
 }
 
@@ -112,12 +119,15 @@ article.help {
 
   article.help {
     padding: 30px 0;
+    overflow: hidden;
     h2 {
       font-size: 36px;
+      margin-bottom: 60px;
     }
     h3 {
       line-height: 40px;
-      font-size: 32px;
+      margin-top: 30px;
+      font-size: 30px;
     }
     h4 {
       line-height: 30px;
@@ -143,6 +153,11 @@ article.help {
       &:first-of-type {
         margin-top: 30px;
       }
+    }
+    img {
+      display: block;
+      width: 375px;
+      margin: 40px auto;
     }
   }
 }
