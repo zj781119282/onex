@@ -4,9 +4,9 @@
       <img v-show="!mobile" src="./../../assets/banner.png" alt="ONEX"/>
       <img v-show="mobile" src="./../../assets/banner-mobile.png" alt="ONEX"/>
       <canvas id="android" v-show="!mobile"></canvas>
-      <span class="android">Android</span>
+      <span class="android" v-show="!mobile">Android</span>
       <canvas id="ios" v-show="!mobile"></canvas>
-      <span class="ios">iOS</span>
+      <span class="ios" v-show="!mobile">iOS</span>
     </a>
     <download v-show="isInnerBrowser"></download>
   </section>
