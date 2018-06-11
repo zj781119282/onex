@@ -10,7 +10,6 @@ export default {
   data() {
     return {
       isInnerBrowser: false,
-      mobile: window.innerWidth <= 1080,
       androidUrl: 'https://onex-file.oss-ap-southeast-1.aliyuncs.com/ONEX-ONEXGoldWebRelease-1.22-2018-06-01.apk',
       iosUrl: 'https://www.pgyer.com/xonex',
       isMobile: identifyDevice.isIphone() || identifyDevice.isAndroid(),
