@@ -41,13 +41,13 @@ img {
 }
 
 /* 全局可统一样式 */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1081px) {
   .wrapper {
     min-width: 1200px;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
   .wrapper {
     display: flex;
     flex-direction: column;

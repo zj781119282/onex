@@ -7,7 +7,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1081px) {
   header {
     position: fixed;
     width: 100%;
@@ -18,8 +18,8 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 0 auto;
-      @include wh(1200px, 60px);
+      height: 60px;
+      margin: 0 60px;
 
       .logo {
         height: 50%;
@@ -34,7 +34,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
   header {
     background-color: $deep-black-background;
 

@@ -12,7 +12,7 @@
 <script src="./help.js"></script>
 
 <style lang="scss">
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1081px) {
     .wrapper {
       .help-container {
         width: 1200px;
@@ -22,7 +22,7 @@
     }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1080px) {
     .wrapper {
       .help-container {
         padding: 1rem .4rem 2rem;
