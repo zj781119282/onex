@@ -16,10 +16,6 @@
   </section>
 </template>
 
-<script>
-  export default {
-    name: 'download',
-  }
-</script>
+<script src="./download.js"></script>
 
 <style lang="scss" scoped src="./download.scss"></style>
