@@ -1,3 +1,5 @@
+@import "./../../../../style-sheets/mixin";
+
 .banner-container {
   position: relative;
   width: 100%;
@@ -5,15 +7,21 @@
     width: 100%;
   }
 
-  canvas {
+  .qrcode {
     position: absolute;
-    width: 120px!important;
-    height: 120px!important;
-    bottom: 60px;
-    left: 50%;
+    width: 10vw!important;
+    height: 10vw!important;
+    bottom: 13%;
+    left: 7.5%;
+    @include icon-normal('./../../assets/border.png');
+  }
+
+  canvas {
+    width: 80% !important;
+    height: 80% !important;
 
     &#android {
-      transform: translateX(-110%);
+      //transform: translateX(-110%);
     }
 
     &#ios {

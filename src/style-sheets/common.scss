@@ -1,25 +1,11 @@
 @import "theme";
+@import "mixin";
 
 a.common-anchor {
   transition: color .2s ease;
 
   &:hover, &.active {
     color: $theme-color;
-  }
-}
-
-article.index {
-  h2 {
-    color: $title-color;
-  }
-  p {
-    color: $desc-color;
-  }
-  &.top {
-    text-align: center;
-  }
-  &.side {
-    text-align: left;
   }
 }
 
@@ -48,20 +34,68 @@ article.help {
   }
 }
 
+.section-title {
+  position: relative;
+  text-align: center;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    background-color: $theme-color;
+  }
+}
+
+.product-intro {
+  position: relative;
+  img {
+    position: absolute;
+  }
+  h1 {
+    color: $title-color;
+  }
+  p {
+    color: $desc-color;
+  }
+}
+
 @media only screen and (max-width: 1080px) {
-  article.index {
-    width: 6rem;
-    margin: 0 auto;
-    h2 {
-      font-size: .4rem;
+  .section-title {
+    margin-top: .8rem;
+    padding-bottom: .16rem;
+    font-size: .5rem;
+    &:after {
+      width: 1.4rem;
+      height: .07rem;
+    }
+  }
+
+  .index-intro {
+    img.intro-image {
+      margin-bottom: .56rem;
+    }
+  }
+
+  article.product-intro {
+    margin-bottom: .5rem;
+    text-align: center;
+    img {
+      top: -.3rem;
+      @include wh(1.16rem, .98rem);
+    }
+    h1 {
+      max-width: 5rem;
+      line-height: .7rem;
+      margin: 0 auto .37rem;
+      font-size: .58rem;
     }
     p {
-      line-height: .32rem;
-      margin-top: .3rem;
-      font-size: .2rem;
-      &:not(:first-of-type) {
-        margin-top: .1rem;
-      }
+      max-width: 6rem;
+      line-height: .36rem;
+      margin: .1rem auto;
+      font-size: .28rem;
     }
   }
 
@@ -106,14 +140,55 @@ article.help {
 }
 
 @media only screen and (min-width: 1081px) {
-  article.index {
-    h2 {
-      font-size: 72px;
+  .section-title {
+    margin-top: 80px;
+    padding-bottom: 16px;
+    font-size: 50px;
+    &:after {
+      width: 140px;
+      height: 7px;
+    }
+  }
+
+  .index-intro {
+    .container {
+      width: 1080px;
+      margin: 0 auto;
+      &.image-lay-left {
+        img {
+          float: left;
+        }
+        article {
+          float: right;
+        }
+      }
+      &.image-lay-right {
+        img {
+          float: right;
+        }
+        article {
+          float: left;
+        }
+      }
+    }
+  }
+
+  article.product-intro {
+    max-width: 597px;
+    margin-top: 140px;
+    img {
+      left: -116px;
+      top: -30px;
+      @include wh(116px, 98px);
+    }
+    h1 {
+      margin-bottom: 37px;
+      font-size: 58px;
     }
     p {
       line-height: 36px;
-      margin-top: 30px;
-      font-size: 32px;
+      margin: 10px 0;
+      font-size: 28px;
     }
   }
 

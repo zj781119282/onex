@@ -1,9 +1,44 @@
 <template>
-  <header v-show="showHeader">
+  <header>
     <div class="container">
       <a href="#/index" class="logo col-xs-4">
         <img src="../../assets/Logo.png" alt="ONEX"/>
       </a>
+      <nav :class="{'hide-xs':!navShow}">
+        <ul>
+          <li>
+            <a href="#/index">
+              {{$t('HEADER.PRODUCT')}}
+            </a>
+          </li>
+          <li>
+            <a href="#/index">
+              {{$t('HEADER.ABOUT')}}
+            </a>
+          </li>
+          <li>
+            <a href="#/index">
+              {{$t('HEADER.SERVICE')}}
+            </a>
+          </li>
+          <li>
+            <a href="#/index">
+              {{$t('HEADER.PROMISE')}}
+            </a>
+          </li>
+          <li>
+            <a href="#/index">
+              {{$t('HEADER.MEDIA')}}
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;" @click="download">
+              {{$t('HEADER.DOWNLOAD')}}
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <span class="space-padding"></span>
       <div class="lang" v-show="!withQuery">
         <a href="javascript:;"
            class="common-anchor"
@@ -15,6 +50,9 @@
            :class="{active: currLang === 'en_US'}"
            @click="switchLang('en_US')">English</a>
       </div>
+      <a href="javascript:;" @click="toggleNav" class="button hide-lg" :class="{close:navShow, open:!navShow}">
+
+      </a>
     </div>
   </header>
 </template>

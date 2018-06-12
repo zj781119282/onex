@@ -11,7 +11,6 @@ const agreement = () => import('page/help/components/agreement/agreement.vue');
 const privacy = () => import('page/help/components/privacy/privacy.vue');
 const support = () => import('page/help/components/support/support.vue');
 const transactionFail = () => import('page/help/components/transaction-fail/transaction-fail.vue');
-const userAgent = () => import('page/user-agent/user-agent.vue');
 
 Vue.use(Router);
 
@@ -71,11 +70,6 @@ const router = new Router({
           component: transactionFail,
         },
       ],
-    },
-    {
-      path: '/ua',
-      name: 'ua',
-      component: userAgent,
     },
   ],
 });

@@ -2,11 +2,13 @@ import Vue from 'vue';
 import VueI18n from 'vue-i18n';
 
 // 引入英文文件
+import header_en from './en_US/header.json'
 import index_en from './en_US/index.json'
 import help_en from './en_US/help.json'
 import support_en from './en_US/support.json'
 import transaction_en from './en_US/transaction.json'
 // 引入中文文件
+import header_cn from './zh_CN/header.json'
 import index_cn from './zh_CN/index.json'
 import help_cn from './zh_CN/help.json'
 import support_cn from './zh_CN/support.json'
@@ -47,12 +49,14 @@ export const i18n = new VueI18n({
   locale: queryLanguage(),
   messages: {
     'zh_CN': Object.assign(
+      header_cn,
       index_cn,
       help_cn,
       support_cn,
       transaction_cn,
     ),
     'en_US': Object.assign(
+      header_en,
       index_en,
       help_en,
       support_en,

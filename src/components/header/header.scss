@@ -25,7 +25,22 @@ header {
         height: 50%;
       }
 
+      nav {
+        ul {
+          li {
+            float: left;
+            margin: 0 25px;
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
       .lang {
+        padding-left: 28px;
+        @include icon-custom('./assets/lang.png', left, center, 18px, 18px);
+
         a {
           font-size: 14px;
         }
@@ -56,11 +71,45 @@ header {
         }
       }
 
+      nav {
+        position: absolute;
+        top: .88rem;
+        left: 0;
+        z-index: 999;
+        background-color: $deep-black-background;
+        @include wh(100vw, calc(100vh - .88rem));
+        ul {
+          li {
+            line-height: 0;
+            padding: .4rem 0 .6rem;
+            border-top: 1px solid #2c2a2a;
+            text-align: center;
+            a {
+              font-size: .32rem;
+            }
+            &:last-of-type {
+              border-bottom: 1px solid #2c2a2a;
+            }
+          }
+        }
+      }
+
       .lang {
         font-size: .2rem;
 
         a {
           font-size: .2rem;
+        }
+      }
+
+      .button {
+        margin-left: .4rem;
+        @include wh(.4rem, .4rem);
+        &.close {
+          @include icon-normal('./assets/close.png');
+        }
+        &.open {
+          @include icon-normal('./assets/open.png');
         }
       }
     }

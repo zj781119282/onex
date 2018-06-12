@@ -1,0 +1,70 @@
+@import "./../../../../style-sheets/theme";
+@import "./../../../../style-sheets/mixin";
+
+#download {
+  display: flex;
+  align-items: center;
+  * {
+    color: #ffffff;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    .btn {
+      &.product {
+        border-color: rgba(255, 255, 255, .2);
+      }
+      &.download {
+        border-color: $theme-color;
+        background-color: $theme-color;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1081px) {
+  #download {
+    height: 233px;
+    @include icon-custom('./../../assets/download_bg.png', center, top, 1920px, 233px);
+    .container {
+      width: 1080px;
+      h3 {
+        font-size: 26px;
+      }
+      .btn {
+        padding: 12px 66px;
+        border: 2px solid;
+        border-radius: 27px;
+        font-size: 18px;
+        &.download {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  #download {
+    display: flex;
+    align-items: center;
+    height: .91rem;
+    @include icon-custom('./../../assets/download-mobile_bg.png', center, top, 100%, 100%);
+    .container {
+      .btn-group {
+        font-size: .18rem;
+      }
+      .btn {
+        padding: .12rem .66rem;
+        border: .02rem solid;
+        border-radius: .27rem;
+        font-size: .18rem;
+        &.download {
+          margin-left: .2rem;
+        }
+      }
+    }
+  }
+}

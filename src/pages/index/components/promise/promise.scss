@@ -1,0 +1,113 @@
+@import "./../../../../style-sheets/theme";
+@import "./../../../../style-sheets/mixin";
+
+#promise {
+  background-color: #f9fafa;
+  .section-title {
+    margin: 0;
+  }
+  dt {
+    color: rgba(0, 0, 0, .6);
+  }
+  dd {
+    color: $desc-color;
+  }
+}
+
+@media only screen and (min-width: 1081px) {
+  #promise {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    .section-title {
+      margin-bottom: 100px;
+    }
+    .promise-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        width: 50%;
+        figure {
+          &.promise-1, &.promise-3 {
+            margin-right: 130px;
+          }
+          &.promise-2, &.promise-4 {
+            margin-left: 130px;
+          }
+          &.promise-3, &.promise-4 {
+            margin-top: 100px;
+          }
+          img {
+            float: left;
+            &.image-1 {
+              margin-right: 28px;
+              @include wh(53px, 70px);
+            }
+            &.image-2 {
+              margin-right: 21px;
+              @include wh(62px, 62px);
+            }
+            &.image-3 {
+              margin-right: 20px;
+              @include wh(60px, 76px);
+            }
+            &.image-4 {
+              margin-right: 25px;
+              @include wh(64px, 64px);
+            }
+          }
+          dl {
+            float: left;
+            width: 360px;
+            dt {
+              margin-bottom: 12px;
+              font-size: 30px;
+            }
+            dd {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  #promise {
+    padding-top: .4rem;
+    padding-bottom: .6rem;
+    .section-title {
+      margin-bottom: 1rem;
+    }
+    .promise-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    li {
+      &:not(:first-of-type) {
+        margin-top: .5rem;
+      }
+      figure {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        img {
+          max-width: .64rem;
+          margin-right: .4rem;
+        }
+        dl {
+          width: 3.6rem;
+          dt {
+            margin-bottom: .12rem;
+            font-size: .3rem;
+          }
+          dd {
+            font-size: .18rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { switchLanguage, getQuery } from '@/i18n/i18n.config';
-import identifyDevice from 'comp/identify_device'
+import { downloadApp } from 'comp/identify_device'
 
 export default {
   name: 'head-top',
@@ -7,12 +7,18 @@ export default {
     return {
       currLang: localStorage._lang || 'zh_CN',
       withQuery: getQuery() && getQuery().includes('lang'),
-      showHeader: !identifyDevice.isWx() && !identifyDevice.isQQ(),
+      navShow: false,
     };
   },
   methods: {
     switchLang(id) {
       switchLanguage(id);
-    }
+    },
+    toggleNav() {
+      this.navShow = !this.navShow;
+    },
+    download() {
+      downloadApp();
+    },
   },
 };

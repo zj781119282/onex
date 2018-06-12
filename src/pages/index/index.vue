@@ -3,13 +3,11 @@
     <head-top></head-top>
     <div class="content">
       <banner></banner>
-      <decenter></decenter>
-      <alipay></alipay>
-      <multiple></multiple>
-      <one-stop></one-stop>
-      <wallet></wallet>
-      <safety></safety>
-      <undertake></undertake>
+      <product></product>
+      <about></about>
+      <service></service>
+      <promise></promise>
+      <download></download>
       <foot></foot>
     </div>
     <loading v-if="!loaded"></loading>
