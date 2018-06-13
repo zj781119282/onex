@@ -30,8 +30,6 @@
           <p>{{$t('INDEX.PRODUCT.DESC_2_1')}}</p>
           <p>{{$t('INDEX.PRODUCT.DESC_2_2')}}</p>
           <p>{{$t('INDEX.PRODUCT.DESC_2_3')}}</p>
-          <p>{{$t('INDEX.PRODUCT.DESC_2_4')}}</p>
-          <p>{{$t('INDEX.PRODUCT.DESC_2_5')}}</p>
         </article>
       </div>
     </div>

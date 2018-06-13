@@ -3,8 +3,8 @@ import foot from 'comp/footer/footer.vue'
 import loading from 'comp/loading/loading.vue'
 import banner from './components/banner/banner.vue'
 import product from './components/product/product.vue'
-import about from './components/about/about.vue'
 import service from './components/service/service.vue'
+import tech from './components/tech/tech.vue'
 import promise from './components/promise/promise.vue'
 import download from './components/download/download.vue'
 import tip from 'comp/download/download.vue'
@@ -17,8 +17,8 @@ export default {
     loading,
     banner,
     product,
-    about,
     service,
+    tech,
     promise,
     download,
     tip,

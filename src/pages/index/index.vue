@@ -4,8 +4,8 @@
     <div class="content">
       <banner @tip="showDownloadTip"></banner>
       <product></product>
-      <about></about>
       <service></service>
+      <tech></tech>
       <promise></promise>
       <download></download>
       <foot></foot>
