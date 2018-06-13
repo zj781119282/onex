@@ -26,6 +26,9 @@
     img.intro-image {
       @include wh(434px, 764px);
     }
+    article.product-intro {
+      margin-right: -100px;
+    }
   }
   .intro-4 {
     margin-top: 60px;
@@ -40,11 +43,12 @@
   .intro-5 {
     margin-top: 60px;
     img.intro-image {
-      margin-left: -200px;
+      margin-right: -150px;
       @include wh(752px, 783px);
     }
     article.product-intro {
-      max-width: 475px;
+      margin-left: -60px;
+      max-width: 530px;
     }
   }
 }
@@ -75,7 +79,7 @@
     }
     .product-intro {
       img.number {
-        left: .3rem;
+        left: 1.1rem;
       }
     }
   }
@@ -86,7 +90,7 @@
     }
     .product-intro {
       img.number {
-        left: 1.1rem;
+        left: 1.4rem;
       }
     }
   }
