@@ -12,9 +12,11 @@
       {{$t('HEADER.IOS_DOWNLOAD')}}
     </a>
     <div class="qrcode android hide-xs" :class="{hide:qrCode !== 'android'}">
+      <span class="triangle vertical-center"></span>
       <canvas id="android" class="absolute-center"></canvas>
     </div>
     <div class="qrcode ios hide-xs" :class="{hide:qrCode !== 'ios'}">
+      <span class="triangle vertical-center"></span>
       <canvas id="ios" class="absolute-center"></canvas>
     </div>
   </section>

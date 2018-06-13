@@ -12,14 +12,14 @@
     position: absolute;
     width: 10vw!important;
     height: 10vw!important;
-    left: 25%;
+    left: 400px;
     opacity: 1;
     transition: all .3s ease;
     &.android {
-      bottom: 28%;
+      bottom: 29%;
     }
     &.ios {
-      bottom: 18%;
+      bottom: 20%;
     }
     &.hide {
       opacity: 0;
@@ -28,20 +28,11 @@
       width: 100%!important;
       height: 100%!important;
     }
-  }
-
-  span {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    color: #fff;
-
-    &.android {
-      transform: translateX(-150%);
-    }
-
-    &.ios {
-      transform: translateX(200%);
+    .triangle {
+      left: -32px;
+      border: 16px solid transparent;
+      border-right-color: #fff;
+      @include wh(0, 0);
     }
   }
 
@@ -70,7 +61,7 @@
   .banner-container {
     .download-btn {
       line-height: 50px;
-      left: 100px;
+      left: 130px;
       border: 2px solid $theme-color;
       border-radius: 25px;
       font-size: 18px;
@@ -80,13 +71,13 @@
         @include wh(20px, 20px);
       }
       &.android {
-        top: 480px;
+        bottom: 36%;
         i {
           @include icon-normal('./../../assets/logo_android.png');
         }
       }
       &.ios {
-        top: 550px;
+        bottom: 27%;
         i {
           @include icon-normal('./../../assets/logo_ios.png');
         }
