@@ -7,6 +7,7 @@ import about from './components/about/about.vue'
 import service from './components/service/service.vue'
 import promise from './components/promise/promise.vue'
 import download from './components/download/download.vue'
+import tip from 'comp/download/download.vue'
 
 export default {
   name: 'index',
@@ -20,15 +21,26 @@ export default {
     service,
     promise,
     download,
+    tip,
   },
   data() {
     return {
       loaded: false,
+      showTip: false,
     }
   },
   mounted() {
     setTimeout(() => {
       this.loaded = true;
     }, 1000);
+  },
+  methods: {
+    showDownloadTip() {
+      const _this = this;
+      this.showTip = true;
+      setTimeout(function() {
+        _this.showTip = false;
+      }, 3000);
+    },
   },
 }

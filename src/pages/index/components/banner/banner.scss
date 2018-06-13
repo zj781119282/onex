@@ -1,3 +1,4 @@
+@import "./../../../../style-sheets/theme";
 @import "./../../../../style-sheets/mixin";
 
 .banner-container {
@@ -11,21 +12,21 @@
     position: absolute;
     width: 10vw!important;
     height: 10vw!important;
-    bottom: 13%;
-    left: 7.5%;
-    @include icon-normal('./../../assets/border.png');
-  }
-
-  canvas {
-    width: 80% !important;
-    height: 80% !important;
-
-    &#android {
-      //transform: translateX(-110%);
+    left: 25%;
+    opacity: 1;
+    transition: all .3s ease;
+    &.android {
+      bottom: 28%;
     }
-
-    &#ios {
-      transform: translateX(10%);
+    &.ios {
+      bottom: 18%;
+    }
+    &.hide {
+      opacity: 0;
+    }
+    canvas {
+      width: 100%!important;
+      height: 100%!important;
     }
   }
 
@@ -41,6 +42,55 @@
 
     &.ios {
       transform: translateX(200%);
+    }
+  }
+
+  .download-btn {
+    position: absolute;
+    text-align: center;
+    color: $theme-color;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .banner-container {
+    .download-btn {
+      line-height: .5rem;
+      left: .6rem;
+      top: 4.54rem;
+      border: .02rem solid $theme-color;
+      border-radius: .25rem;
+      font-size: .2rem;
+      @include wh(2.15rem, .5rem);
+    }
+  }
+}
+
+@media only screen and (min-width: 1081px) {
+  .banner-container {
+    .download-btn {
+      line-height: 50px;
+      left: 100px;
+      border: 2px solid $theme-color;
+      border-radius: 25px;
+      font-size: 18px;
+      @include wh(220px, 50px);
+      i {
+        margin-bottom: -3px;
+        @include wh(20px, 20px);
+      }
+      &.android {
+        top: 480px;
+        i {
+          @include icon-normal('./../../assets/logo_android.png');
+        }
+      }
+      &.ios {
+        top: 550px;
+        i {
+          @include icon-normal('./../../assets/logo_ios.png');
+        }
+      }
     }
   }
 }

@@ -16,13 +16,16 @@ const identification = {
   isAndroid() {
     return ua.includes('Android');
   },
+  isMobile() {
+    return ua.includes('Android') || ua.includes('iPad') || ua.includes('iPhone');
+  },
 };
 
 export const androidUrl = 'https://onex-file.oss-ap-southeast-1.aliyuncs.com/ONEX-ONEXGoldWebRelease-1.22-2018-06-01.apk';
 export const iosUrl = 'https://www.pgyer.com/onex';
 
 export function downloadApp() {
-  if (identification.isAndroid() || identification.isIphone()) {
+  if (identification.isMobile()) {
     window.open(identification.isIphone() ? iosUrl: androidUrl);
   }
 }

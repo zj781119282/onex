@@ -73,11 +73,19 @@ header {
 
       nav {
         position: absolute;
+        width: 100vw;
         top: .88rem;
         left: 0;
         z-index: 999;
         background-color: $deep-black-background;
-        @include wh(100vw, calc(100vh - .88rem));
+        overflow: hidden;
+        transition: all .2s ease;
+        &.close {
+          height: 0;
+        }
+        &.open {
+          height: calc(100vh - .88rem);
+        }
         ul {
           li {
             line-height: 0;

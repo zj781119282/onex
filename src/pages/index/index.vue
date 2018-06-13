@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
-    <head-top></head-top>
+    <head-top @tip="showDownloadTip"></head-top>
     <div class="content">
-      <banner></banner>
+      <banner @tip="showDownloadTip"></banner>
       <product></product>
       <about></about>
       <service></service>
@@ -11,6 +11,7 @@
       <foot></foot>
     </div>
     <loading v-if="!loaded"></loading>
+    <tip v-if="showTip"></tip>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 import { switchLanguage, getQuery } from '@/i18n/i18n.config';
-import { downloadApp } from 'comp/identify_device'
+import identify, { downloadApp } from 'comp/identify_device'
 
 export default {
   name: 'head-top',
@@ -18,7 +18,22 @@ export default {
       this.navShow = !this.navShow;
     },
     download() {
+      this.navShow = false;
+      if (identify.isWx() || identify.isQQ()) {
+        this.$emit('tip');
+        return;
+      }
       downloadApp();
+    },
+    goAnchor(id) {
+      const ele = document.querySelector(id);
+      const content = document.querySelector('.content');
+      if (identify.isMobile()) {
+        content.scrollTop = ele.offsetTop;
+      } else {
+        document.documentElement.scrollTop = ele.offsetTop;
+      }
+      this.navShow = false;
     },
   },
 };

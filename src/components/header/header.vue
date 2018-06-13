@@ -4,41 +4,41 @@
       <a href="#/index" class="logo col-xs-4">
         <img src="../../assets/Logo.png" alt="ONEX"/>
       </a>
-      <nav :class="{'hide-xs':!navShow}">
+      <nav :class="{'close':!navShow, open:navShow}">
         <ul>
           <li>
-            <a href="#/index">
+            <a href="javascript:;" @click="goAnchor('#product')">
               {{$t('HEADER.PRODUCT')}}
             </a>
           </li>
           <li>
-            <a href="#/index">
+            <a href="javascript:;" @click="goAnchor('#about')">
               {{$t('HEADER.ABOUT')}}
             </a>
           </li>
           <li>
-            <a href="#/index">
+            <a href="javascript:;" @click="goAnchor('#service')">
               {{$t('HEADER.SERVICE')}}
             </a>
           </li>
           <li>
-            <a href="#/index">
+            <a href="javascript:;" @click="goAnchor('#promise')">
               {{$t('HEADER.PROMISE')}}
             </a>
           </li>
           <li>
-            <a href="#/index">
+            <a href="javascript:;">
               {{$t('HEADER.MEDIA')}}
             </a>
           </li>
           <li>
-            <a href="javascript:;" @click="download">
+            <a href="javascript:;" @click="download" class="hide-lg">
               {{$t('HEADER.DOWNLOAD')}}
             </a>
           </li>
         </ul>
       </nav>
-      <span class="space-padding"></span>
+      <span class="space-padding hide-lg"></span>
       <div class="lang" v-show="!withQuery">
         <a href="javascript:;"
            class="common-anchor"

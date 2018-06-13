@@ -5,6 +5,8 @@
     "SERVICE": "企业服务",
     "PROMISE": "我们承诺",
     "MEDIA": "媒体报道",
-    "DOWNLOAD": "立即下载"
+    "DOWNLOAD": "立即下载",
+    "ANDROID_DOWNLOAD": "Android 下载",
+    "IOS_DOWNLOAD": "iOS 下载"
   }
 }
