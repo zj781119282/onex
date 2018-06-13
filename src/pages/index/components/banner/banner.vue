@@ -19,9 +19,38 @@
       <span class="triangle vertical-center"></span>
       <canvas id="ios" class="absolute-center"></canvas>
     </div>
+    <div class="carousel-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./../../assets/slider_1.png" alt="ONEX"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="./../../assets/slider_2.png" alt="ONEX"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="./../../assets/slider_3.png" alt="ONEX"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="./../../assets/slider_4.png" alt="ONEX"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="./../../assets/slider_5.png" alt="ONEX"/>
+        </div>
+        <div class="swiper-slide">
+          <img src="./../../assets/slider_6.png" alt="ONEX"/>
+        </div>
+      </div>
+    </div>
+    <div class="pages-container hide-xs"></div>
   </section>
 </template>
 
 <script src="./banner.js"></script>
 
 <style lang="scss" scoped src="./banner.scss"></style>
+
+<style lang="scss">
+  .swiper-pagination-bullet {
+    margin: 0 2px;
+  }
+</style>

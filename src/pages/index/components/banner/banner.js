@@ -1,5 +1,6 @@
 import identify, { androidUrl, iosUrl, downloadApp } from 'comp/identify_device'
 import QRcode from 'qrcode'
+import Swiper from 'swiper'
 
 export default {
   name: 'banner',
@@ -35,5 +36,15 @@ export default {
       _this.qrCode = false;
     });
     this.drawQrcode();
+    new Swiper('.carousel-container', {
+      autoplay: {
+        delay: 5000,
+      },
+      loop: true,
+      pagination: {
+        el: '.pages-container',
+        clickable: true,
+      },
+    });
   },
 }

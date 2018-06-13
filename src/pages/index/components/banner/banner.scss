@@ -41,6 +41,20 @@
     text-align: center;
     color: $theme-color;
   }
+
+  .carousel-container {
+    position: absolute;
+    overflow: hidden;
+    .swiper-wrapper {
+      @include wh(100%!important, 100%!important);
+      .swiper-slide {
+        @include wh(100%!important, 100%!important);
+      }
+    }
+  }
+  .pages-container {
+    position: absolute;
+  }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -54,6 +68,12 @@
       font-size: .2rem;
       @include wh(2.15rem, .5rem);
     }
+  }
+
+  .carousel-container {
+    right: 1.445rem;
+    bottom: 1.8rem;
+    @include wh(2.63rem, 4.66rem);
   }
 }
 
@@ -82,6 +102,17 @@
           @include icon-normal('./../../assets/logo_ios.png');
         }
       }
+    }
+
+    .carousel-container {
+      right: 33.5%;
+      bottom: 18%;
+      @include wh(18.5vw, 33vw);
+    }
+
+    .pages-container {
+      right: 48%;
+      bottom: 6%;
     }
   }
 }
