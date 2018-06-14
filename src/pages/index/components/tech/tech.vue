@@ -5,12 +5,14 @@
         {{$t('INDEX.TECH.TITLE')}}
       </h2>
       <article class="help">
-        <p class="tc">{{$t('INDEX.TECH.P_1')}}</p>
-        <p class="tc">{{$t('INDEX.TECH.P_2')}}</p>
-        <p class="tc">{{$t('INDEX.TECH.P_3')}}</p>
-        <p class="tc">{{$t('INDEX.TECH.P_4')}}</p>
-        <p class="tc">{{$t('INDEX.TECH.P_5')}}</p>
-        <p class="tc">{{$t('INDEX.TECH.P_6')}}</p>
+        <!--<p class="tc">{{$t('INDEX.TECH.P_1')}}</p>-->
+        <!--<p class="tc">{{$t('INDEX.TECH.P_2')}}</p>-->
+        <!--<p class="tc">{{$t('INDEX.TECH.P_3')}}</p>-->
+        <!--<p class="tc">{{$t('INDEX.TECH.P_4')}}</p>-->
+        <!--<p class="tc">{{$t('INDEX.TECH.P_5')}}</p>-->
+        <!--<p class="tc">{{$t('INDEX.TECH.P_6')}}</p>-->
+        <p class="tc">{{$t('INDEX.TECH.P_7')}}</p>
+        <p class="tc">{{$t('INDEX.TECH.P_8')}}</p>
       </article>
       <ul class="clearfix">
         <li>

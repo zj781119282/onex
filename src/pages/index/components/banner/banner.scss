@@ -16,10 +16,10 @@
     opacity: 1;
     transition: all .3s ease;
     &.android {
-      bottom: 29%;
+      bottom: 23%;
     }
     &.ios {
-      bottom: 20%;
+      bottom: 13%;
     }
     &.hide {
       opacity: 0;
@@ -91,13 +91,13 @@
         @include wh(20px, 20px);
       }
       &.android {
-        bottom: 36%;
+        bottom: 30%;
         i {
           @include icon-normal('./../../assets/logo_android.png');
         }
       }
       &.ios {
-        bottom: 27%;
+        bottom: 20%;
         i {
           @include icon-normal('./../../assets/logo_ios.png');
         }
