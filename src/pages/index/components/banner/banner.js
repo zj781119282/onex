@@ -38,7 +38,7 @@ export default {
     this.drawQrcode();
     new Swiper('.carousel-container', {
       autoplay: {
-        delay: 5000,
+        delay: 3000,
       },
       loop: true,
       pagination: {
