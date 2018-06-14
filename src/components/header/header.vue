@@ -7,32 +7,27 @@
       <nav :class="{'close':!navShow, open:navShow}">
         <ul>
           <li>
-            <a href="javascript:;" @click="goAnchor('#product')">
+            <a class="common-anchor" href="javascript:;" @click="goAnchor('#product')">
               {{$t('HEADER.PRODUCT')}}
             </a>
           </li>
           <li>
-            <a href="javascript:;" @click="goAnchor('#about')">
-              {{$t('HEADER.ABOUT')}}
-            </a>
-          </li>
-          <li>
-            <a href="javascript:;" @click="goAnchor('#service')">
+            <a class="common-anchor" href="javascript:;" @click="goAnchor('#service')">
               {{$t('HEADER.SERVICE')}}
             </a>
           </li>
           <li>
-            <a href="javascript:;" @click="goAnchor('#promise')">
-              {{$t('HEADER.PROMISE')}}
+            <a class="common-anchor" href="javascript:;" @click="goAnchor('#tech')">
+              {{$t('HEADER.TECH')}}
             </a>
           </li>
           <li>
-            <a href="javascript:;">
+            <a class="common-anchor" href="javascript:;">
               {{$t('HEADER.MEDIA')}}
             </a>
           </li>
           <li>
-            <a href="javascript:;" @click="download" class="hide-lg">
+            <a href="javascript:;" @click="download" class="common-anchor hide-lg">
               {{$t('HEADER.DOWNLOAD')}}
             </a>
           </li>
