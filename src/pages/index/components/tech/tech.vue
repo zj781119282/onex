@@ -15,6 +15,7 @@
       <ul class="clearfix">
         <li>
           <figure>
+            <img src="./../../assets/tech_1.png" alt="ONEX"/>
             <dl>
               <dt>
                 {{$t('INDEX.TECH.TECH_1')}}
@@ -27,6 +28,7 @@
         </li>
         <li>
           <figure>
+            <img src="./../../assets/tech_2.png" alt="ONEX"/>
             <dl>
               <dt>
                 {{$t('INDEX.TECH.TECH_2')}}
@@ -39,6 +41,7 @@
         </li>
         <li>
           <figure>
+            <img src="./../../assets/tech_3.png" alt="ONEX"/>
             <dl>
               <dt>
                 {{$t('INDEX.TECH.TECH_3')}}
@@ -51,6 +54,7 @@
         </li>
         <li>
           <figure>
+            <img src="./../../assets/tech_4.png" alt="ONEX"/>
             <dl>
               <dt>
                 {{$t('INDEX.TECH.TECH_4')}}

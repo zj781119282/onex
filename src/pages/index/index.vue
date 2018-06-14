@@ -6,7 +6,7 @@
       <product></product>
       <service></service>
       <tech></tech>
-      <promise></promise>
+      <!--<promise></promise>-->
       <download></download>
       <foot></foot>
     </div>
