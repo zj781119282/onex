@@ -21,7 +21,7 @@ const identification = {
   },
 };
 
-export const androidUrl = 'https://onex-file.oss-ap-southeast-1.aliyuncs.com/ONEX-ONEXGoldWebRelease-1.22-2018-06-01.apk';
+export const androidUrl = 'https://onex-file.oss-ap-southeast-1.aliyuncs.com/ONEX-ONEXGoldGooglePlayRelease-1.27-2018-06-14.apk';
 export const iosUrl = 'https://www.pgyer.com/onex';
 
 export function downloadApp() {
