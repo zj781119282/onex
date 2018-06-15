@@ -30,13 +30,13 @@
         </li>
         <li>
           <figure>
-            <img src="./../../assets/tech_2.png" alt="ONEX"/>
+            <img src="./../../assets/tech_4.png" alt="ONEX"/>
             <dl>
               <dt>
-                {{$t('INDEX.TECH.TECH_2')}}
+                {{$t('INDEX.TECH.TECH_4')}}
               </dt>
               <dd>
-                {{$t('INDEX.TECH.DESC_2')}}
+                {{$t('INDEX.TECH.DESC_4')}}
               </dd>
             </dl>
           </figure>
@@ -56,13 +56,13 @@
         </li>
         <li>
           <figure>
-            <img src="./../../assets/tech_4.png" alt="ONEX"/>
+            <img src="./../../assets/tech_2.png" alt="ONEX"/>
             <dl>
               <dt>
-                {{$t('INDEX.TECH.TECH_4')}}
+                {{$t('INDEX.TECH.TECH_2')}}
               </dt>
               <dd>
-                {{$t('INDEX.TECH.DESC_4')}}
+                {{$t('INDEX.TECH.DESC_2')}}
               </dd>
             </dl>
           </figure>
