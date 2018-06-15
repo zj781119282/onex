@@ -9,6 +9,12 @@ a.common-anchor {
   }
 }
 
+a.common-btn {
+  text-align: center;
+  background-color: $theme-color;
+  color: #fff;
+}
+
 article.help {
   background-color: #fff;
   h2 {
@@ -62,6 +68,13 @@ article.help {
 }
 
 @media only screen and (max-width: 1080px) {
+  a.common-btn {
+    line-height: .6rem;
+    border-radius: .25rem;
+    font-size: .2rem;
+    @include wh(2.4rem, .6rem);
+  }
+
   .section-title {
     margin-top: .8rem;
     padding-bottom: .16rem;
@@ -142,6 +155,13 @@ article.help {
 }
 
 @media only screen and (min-width: 1081px) {
+  a.common-btn {
+    line-height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+    @include wh(220px, 50px);
+  }
+
   .section-title {
     margin-top: 80px;
     padding-bottom: 16px;

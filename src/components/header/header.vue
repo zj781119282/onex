@@ -26,15 +26,25 @@
               {{$t('HEADER.MEDIA')}}
             </a>
           </li>
-          <li>
-            <a href="javascript:;" @click="download" class="common-anchor hide-lg">
-              {{$t('HEADER.DOWNLOAD')}}
+          <li class=" lang hide-lg" v-show="!withQuery">
+            <a href="javascript:;"
+               @click="switchLang('zh_CN')"
+               class="common-anchor"
+               :class="{active: currLang === 'zh_CN'}">
+              中文
+            </a>
+            /
+            <a href="javascript:;"
+               @click="switchLang('en_US')"
+               class="common-anchor"
+               :class="{active: currLang === 'en_US'}">
+              English
             </a>
           </li>
         </ul>
       </nav>
       <span class="space-padding hide-lg"></span>
-      <div class="lang" v-show="!withQuery">
+      <div class="lang hide-xs" v-show="!withQuery">
         <a href="javascript:;"
            class="common-anchor"
            :class="{active: currLang === 'zh_CN'}"
@@ -45,6 +55,7 @@
            :class="{active: currLang === 'en_US'}"
            @click="switchLang('en_US')">English</a>
       </div>
+      <a href="javascript:;" class="common-btn hide-lg" @click="download">{{$t('HEADER.DOWNLOAD')}}</a>
       <a href="javascript:;" @click="toggleNav" class="button hide-lg" :class="{close:navShow, open:!navShow}">
 
       </a>

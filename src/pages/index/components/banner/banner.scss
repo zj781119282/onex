@@ -36,10 +36,8 @@
     }
   }
 
-  .download-btn {
+  .common-btn {
     position: absolute;
-    text-align: center;
-    color: $theme-color;
   }
 
   .carousel-container {
@@ -59,14 +57,9 @@
 
 @media only screen and (max-width: 1080px) {
   .banner-container {
-    .download-btn {
-      line-height: .5rem;
+    .common-btn {
       left: .6rem;
       top: 4.54rem;
-      border: .02rem solid $theme-color;
-      border-radius: .25rem;
-      font-size: .2rem;
-      @include wh(2.15rem, .5rem);
     }
   }
 
@@ -79,13 +72,8 @@
 
 @media only screen and (min-width: 1081px) {
   .banner-container {
-    .download-btn {
-      line-height: 50px;
+    .common-btn {
       left: 130px;
-      border: 2px solid $theme-color;
-      border-radius: 25px;
-      font-size: 18px;
-      @include wh(220px, 50px);
       i {
         margin-bottom: -3px;
         @include wh(20px, 20px);

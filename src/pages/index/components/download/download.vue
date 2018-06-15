@@ -5,13 +5,13 @@
         {{$t('INDEX.DOWNLOAD.TITLE')}}
       </h3>
       <div class="btn-group">
-        <a href="javascript:;" class="btn product" @click="goAnchor('#product')">
+        <a href="javascript:;" class="common-btn product" @click="goAnchor('#product')">
           {{$t('INDEX.DOWNLOAD.PRODUCT')}}
         </a>
-        <a href="javascript:;" class="btn download hide-xs" @click="goAnchor('#banner')">
+        <a href="javascript:;" class="common-btn hide-xs" @click="goAnchor('#banner')">
           {{$t('INDEX.DOWNLOAD.DOWN')}}
         </a>
-        <a href="javascript:;" class="btn download hide-lg" @click="download">
+        <a href="javascript:;" class="common-btn hide-lg" @click="download">
           {{$t('INDEX.DOWNLOAD.DOWN')}}
         </a>
       </div>

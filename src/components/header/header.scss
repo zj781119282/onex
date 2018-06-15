@@ -95,6 +95,14 @@ header {
             a {
               font-size: .32rem;
             }
+            &.lang {
+              display: flex;
+              justify-content: center;
+              a {
+                margin: 0 1rem;
+                font-size: .32rem;
+              }
+            }
             &:last-of-type {
               border-bottom: 1px solid #2c2a2a;
             }

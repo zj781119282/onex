@@ -12,13 +12,10 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    .btn {
+    .common-btn {
       &.product {
+        background-color: transparent;
         border-color: rgba(255, 255, 255, .2);
-      }
-      &.download {
-        border-color: $theme-color;
-        background-color: $theme-color;
       }
     }
   }
@@ -33,14 +30,9 @@
       h3 {
         font-size: 26px;
       }
-      .btn {
-        padding: 12px 66px;
-        border: 2px solid;
-        border-radius: 27px;
-        font-size: 18px;
-        &.download {
-          margin-left: 20px;
-        }
+      .common-btn {
+        margin-left: 20px;
+        border: 2px solid $theme-color;
       }
     }
   }
@@ -56,14 +48,9 @@
       .btn-group {
         font-size: .18rem;
       }
-      .btn {
-        padding: .12rem .66rem;
-        border: .02rem solid;
-        border-radius: .27rem;
-        font-size: .18rem;
-        &.download {
-          margin-left: .2rem;
-        }
+      .common-btn {
+        margin-left: .2rem;
+        border: .02rem solid $theme-color;
       }
     }
   }
