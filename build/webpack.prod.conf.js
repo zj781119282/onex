@@ -10,7 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
+//const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 const env = require('../config/prod.env')
 
@@ -120,17 +120,14 @@ const webpackConfig = merge(baseWebpackConfig, {
       {
         from: './favicon.ico',
       },
-      {
-        from: './index.html',
-      },
     ]),
 
-    new PrerenderSPAPlugin({
-      // Required - The path to the webpack-outputted app to prerender.
-      staticDir: path.join(__dirname, '../dist'),
-      // Required - Routes to render.
-      routes: ['/', '/help/fee', '/help/mnemonic', '/help/agreement', '/help/privacy', '/help/support', '/help/transaction-fail'],
-    }),
+    //new PrerenderSPAPlugin({
+    //  // Required - The path to the webpack-outputted app to prerender.
+    //  staticDir: path.join(__dirname, '../dist'),
+    //  // Required - Routes to render.
+    //  routes: ['/', '/help/fee', '/help/mnemonic', '/help/agreement', '/help/privacy', '/help/support', '/help/transaction-fail'],
+    //}),
   ]
 })
 
