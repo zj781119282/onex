@@ -75,7 +75,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       // Required - The path to the webpack-outputted app to prerender.
       staticDir: path.join(__dirname, '../dist'),
       // Required - Routes to render.
-      routes: ['/', '/help'],
+      routes: ['/', '/help/fee', '/help/mnemonic', '/help/agreement', '/help/privacy', '/help/support', '/help/transaction-fail'],
     }),
   ]
 })

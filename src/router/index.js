@@ -2,19 +2,19 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Cookies from 'js-cookie';
 
-const index = () => import('page/index/index.vue');
-const help = () => import('page/help/help.vue');
-const fee = () => import('page/help/components/fee/fee.vue');
-const mnemonic = () => import('page/help/components/mnemonic/mnemonic.vue');
-//const privateKey = () => import('page/help/components/private-key/private-key.vue');
-const agreement = () => import('page/help/components/agreement/agreement.vue');
-const privacy = () => import('page/help/components/privacy/privacy.vue');
-const support = () => import('page/help/components/support/support.vue');
-const transactionFail = () => import('page/help/components/transaction-fail/transaction-fail.vue');
+import index from 'page/index/index.vue';
+import help from 'page/help/help.vue';
+import fee from 'page/help/components/fee/fee.vue';
+import mnemonic from 'page/help/components/mnemonic/mnemonic.vue';
+import agreement from 'page/help/components/agreement/agreement.vue';
+import privacy from 'page/help/components/privacy/privacy.vue';
+import support from 'page/help/components/support/support.vue';
+import transactionFail from 'page/help/components/transaction-fail/transaction-fail.vue';
 
 Vue.use(Router);
 
 const router = new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
