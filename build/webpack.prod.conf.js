@@ -120,6 +120,9 @@ const webpackConfig = merge(baseWebpackConfig, {
       {
         from: './favicon.ico',
       },
+      {
+        from: './index.html',
+      },
     ]),
 
     new PrerenderSPAPlugin({
