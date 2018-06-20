@@ -27,10 +27,6 @@ const router = new Router({
       component: help,
       children: [
         {
-          path: '/help',
-          redirect: '/help/fee',
-        },
-        {
           path: '/help/fee',
           name: 'fee',
           component: fee,

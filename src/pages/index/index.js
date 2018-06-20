@@ -25,11 +25,12 @@ export default {
   },
   data() {
     return {
-      loaded: false,
+      loaded: true,
       showTip: false,
     }
   },
   mounted() {
+    this.loaded = false;
     setTimeout(() => {
       this.loaded = true;
     }, 1000);
