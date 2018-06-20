@@ -10,6 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -74,6 +75,10 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new PrerenderSPAPlugin({
       staticDir: path.join(__dirname, '../dist'),
       routes: ['/', '/help/fee', '/help/mnemonic', '/help/agreement', '/help/privacy', '/help/support', '/help/transaction-fail'],
+      indexPath: path.join(__dirname, '../dist', 'index.html'),
+      renderer: new Renderer({
+        renderAfterTime: 3000,
+      }),
     }),
   ],
 })
