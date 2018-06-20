@@ -15,14 +15,15 @@ import './style-sheets/media-xs.scss';
 
 Vue.use(MetaInfo);
 
-Vue.config.productionTip = false;
-
-const root = new Vue({
-  router,
-  i18n,
-  render: h => h(App),
-});
-
 document.addEventListener('DOMContentLoaded', () => {
+
+  Vue.config.productionTip = false;
+
+  const root = new Vue({
+    router,
+    i18n,
+    render: h => h(App),
+  });
+
   root.$mount('#app');
 });
