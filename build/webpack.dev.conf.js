@@ -46,6 +46,11 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     }
   },
   plugins: [
+    // pre-render html files for seo
+    new PrerenderSPAPlugin({
+      staticDir: path.join(__dirname, '../dist'),
+      routes: ['/', '/help/fee', '/help/mnemonic', '/help/agreement', '/help/privacy', '/help/support', '/help/transaction-fail'],
+    }),
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
     }),
@@ -54,7 +59,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new webpack.NoEmitOnErrorsPlugin(),
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
-      title: 'Code splitting',
       filename: 'index.html',
       template: 'index.html',
       inject: true
@@ -70,11 +74,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         from: './favicon.ico',
       },
     ]),
-
-    new PrerenderSPAPlugin({
-      staticDir: path.join(__dirname, '../dist'),
-      routes: ['/', '/help/fee', '/help/mnemonic', '/help/agreement', '/help/privacy', '/help/support', '/help/transaction-fail'],
-    }),
   ],
 })
 

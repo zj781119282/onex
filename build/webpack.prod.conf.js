@@ -121,7 +121,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         from: './favicon.ico',
       },
     ]),
-
+    // pre-render html files for seo
     new PrerenderSPAPlugin({
       staticDir: path.join(__dirname, '../dist'),
       routes: ['/', '/help/fee', '/help/mnemonic', '/help/agreement', '/help/privacy', '/help/support', '/help/transaction-fail'],
