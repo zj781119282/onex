@@ -9,7 +9,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
+//const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -47,10 +47,10 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     // pre-render html files for seo
-    new PrerenderSPAPlugin({
-      staticDir: path.join(__dirname, '../dist'),
-      routes: ['/', '/help/fee', '/help/mnemonic', '/help/agreement', '/help/privacy', '/help/support', '/help/transaction-fail'],
-    }),
+    //new PrerenderSPAPlugin({
+    //  staticDir: path.join(__dirname, '../dist'),
+    //  routes: ['/', '/help/fee', '/help/mnemonic', '/help/agreement', '/help/privacy', '/help/support', '/help/transaction-fail'],
+    //}),
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
     }),
