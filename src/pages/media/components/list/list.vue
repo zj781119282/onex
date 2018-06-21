@@ -17,12 +17,16 @@
         <ul>
           <li v-for="item in list">
             <figure class="clearfix">
+              <a href="javascript:;" class="anchor hide-lg"></a>
               <img class="fl" :src="item.thumbnail" :alt="item.title" :title="item.title"/>
               <div class="figure-content fl">
-                <h4 class="ellipsis">{{item.title}}</h4>
-                <p>{{item.brief}}</p>
-                <a href="javascript:;">
-                  More
+                <h4 class="ellipsis">
+                  {{item.title}}
+                  <span></span>
+                </h4>
+                <p class="ellipsis">{{item.brief}}</p>
+                <a href="javascript:;" class="hide-xs">
+                  More >
                 </a>
               </div>
             </figure>

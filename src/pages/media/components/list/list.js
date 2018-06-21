@@ -10,6 +10,5 @@ export default {
   },
   mounted() {
     this.list = localStorage._lang === 'en_US' ? list_en : list_cn;
-    console.log(this.list)
   },
 }

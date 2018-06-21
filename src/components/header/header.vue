@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <a href="/index" class="logo col-xs-1">
+      <a href="/" class="logo col-xs-1">
         <img src="./assets/Logo.png" alt="ONEX"/>
       </a>
       <nav :class="{'close':!navShow, open:navShow}">
@@ -22,7 +22,7 @@
             </a>
           </li>
           <li>
-            <a class="common-anchor" href="/media">
+            <a class="common-anchor" href="/media" @click="navShow = false">
               {{$t('HEADER.MEDIA')}}
             </a>
           </li>

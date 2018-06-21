@@ -28,6 +28,10 @@ export default {
     goAnchor(id) {
       const ele = document.querySelector(id);
       const content = document.querySelector('.content');
+      if (location.pathname !== '/') {
+        this.$router.push('/');
+        return;
+      }
       if (identify.isMobile()) {
         content.scrollTop = ele.offsetTop;
       } else {

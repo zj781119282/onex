@@ -3,11 +3,68 @@
 
 .news-list {
   margin: 0 auto;
+  .container {
+    ul {
+      li {
+        figure {
+          h4 {
+            position: relative;
+            font-weight: bolder;
+            span {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              background-color: $theme-color;
+            }
+          }
+          p {
+            text-align: justify;
+            color: $desc-color;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1080px) {
   .news-list {
     padding: 1rem .4rem;
+    .container {
+      ul {
+        li {
+          margin-bottom: .5rem;
+          figure {
+            position: relative;
+            a.anchor {
+              position: absolute;
+              left: 0;
+              top: 0;
+              @include wh(100%, 100%);
+            }
+            img {
+              width: 2.4rem;
+            }
+            .figure-content {
+              width: 4rem;
+              margin-left: .2rem;
+              h4 {
+                margin-top: .1rem;
+                font-size: .28rem;
+                padding-bottom: .25rem;
+                span {
+                  @include wh(1.2rem, .04rem);
+                }
+              }
+              p {
+                margin-top: .3rem;
+                font-size: .2rem;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -21,6 +78,12 @@
         li {
           margin-bottom: 30px;
           figure {
+            &:hover {
+              background-color: $light-border;
+              h4 {
+                color: $theme-color;
+              }
+            }
             img {
               @include wh(350px, 236px);
             }
@@ -28,11 +91,25 @@
               width: 514px;
               margin-left: 36px;
               h4 {
+                margin-top: 16px;
+                padding-bottom: 16px;
                 font-size: 24px;
-                font-weight: bolder;
+                span {
+                  border-radius: 2px;
+                  @include wh(90px, 4px);
+                }
               }
               p {
-                text-align: justify;
+                margin-top: 30px;
+                font-size: 14px;
+              }
+              a {
+                margin-top: 20px;
+                padding: 5px 20px 5px 30px;
+                border: 1px solid $theme-color;
+                border-radius: 20px;
+                font-size: 12px;
+                color: $theme-color;
               }
             }
           }
