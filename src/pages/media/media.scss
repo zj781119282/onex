@@ -19,6 +19,9 @@
     .container {
       padding: .4rem 0;
       font-size: .24rem;
+      .item {
+        max-width: 4rem;
+      }
     }
   }
 }

@@ -12,6 +12,7 @@ import privacy from 'page/help/components/privacy/privacy.vue';
 import support from 'page/help/components/support/support.vue';
 import transactionFail from 'page/help/components/transaction-fail/transaction-fail.vue';
 import list from 'page/media/components/list/list.vue'
+import detail from 'page/media/components/detail/detail.vue'
 
 Vue.use(Router);
 
@@ -42,11 +43,6 @@ const router = new Router({
           name: 'mnemonic',
           component: mnemonic,
         },
-        //{
-        //  path: '/help/private-key',
-        //  name: 'private-key',
-        //  component: privateKey,
-        //},
         {
           path: '/help/agreement',
           name: 'agreement',
@@ -82,6 +78,11 @@ const router = new Router({
           path: '/media/list',
           name: 'media-list',
           component: list,
+        },
+        {
+          path: '/media/detail',
+          name: 'media-detail',
+          component: detail,
         },
       ],
     }

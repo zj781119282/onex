@@ -8,6 +8,14 @@ export default {
       list: [],
     }
   },
+  methods: {
+    goDetail(id) {
+      this.$router.push({
+        path: '/media/detail',
+        query: { id, },
+      });
+    },
+  },
   mounted() {
     this.list = localStorage._lang === 'en_US' ? list_en : list_cn;
   },

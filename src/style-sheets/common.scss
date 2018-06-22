@@ -67,6 +67,13 @@ article.help {
   }
 }
 
+article.news-detail {
+  p {
+    text-align: justify;
+    color: rgba(0, 0, 0, .8);
+  }
+}
+
 @media only screen and (max-width: 1080px) {
   a.common-btn {
     line-height: .6rem;
@@ -150,6 +157,19 @@ article.help {
     }
     img {
       margin: .4rem 0;
+    }
+  }
+
+  article.news-detail {
+    p {
+      line-height: .4rem;
+      font-size: .3rem;
+      &:not(:first-of-type) {
+        margin-top: .4rem;
+      }
+    }
+    img {
+      margin: .6rem 0 .2rem;
     }
   }
 }
@@ -255,6 +275,18 @@ article.help {
       display: block;
       width: 375px;
       margin: 40px auto;
+    }
+  }
+
+  article.news-detail {
+    p {
+      font-size: 18px;
+      &:not(:first-of-type) {
+        margin-top: 20px;
+      }
+    }
+    img {
+      margin: 30px 0 10px;
     }
   }
 }

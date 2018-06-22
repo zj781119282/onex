@@ -1,0 +1,52 @@
+@import "./../../../../style-sheets/theme";
+@import "./../../../../style-sheets/mixin";
+
+.detail-container {
+  margin: 0 auto;
+  .container {
+    h2 {
+      text-align: center;
+    }
+    p.date {
+      text-align: center;
+      color: $desc-color;
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .detail-container {
+    padding: 1rem .4rem 3rem;
+    .container {
+      h2 {
+        line-height: .6rem;
+        margin-bottom: .4rem;
+        padding: 0 1rem;
+        font-size: .4rem;
+      }
+      p.date {
+        margin-bottom: 1rem;
+        font-size: .24rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1081px) {
+  .detail-container {
+    width: 1200px;
+    padding: 50px 0 276px;
+    .container {
+      width: 900px;
+      h2 {
+        margin-bottom: 20px;
+        font-size: 32px;
+        text-align: center;
+      }
+      p.date {
+        margin-bottom: 40px;
+        font-size: 16px;
+      }
+    }
+  }
+}
