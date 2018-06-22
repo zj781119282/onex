@@ -28,7 +28,7 @@ export default {
     goAnchor(id) {
       const ele = document.querySelector(id);
       const content = document.querySelector('.content');
-      if (location.pathname !== '/') {
+      if (this.$route.name !== 'index') {
         this.$router.push('/');
         return;
       }
