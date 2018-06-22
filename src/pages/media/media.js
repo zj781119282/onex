@@ -18,6 +18,6 @@ export default {
     this.loaded = false;
     setTimeout(() => {
       this.loaded = true;
-    }, 100);
+    }, 1000);
   },
 }

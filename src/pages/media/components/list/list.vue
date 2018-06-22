@@ -2,7 +2,7 @@
   <section class="media-list">
     <div class="branches">
       <div class="container">
-        <a href="/index" class="item">
+        <a href="/" class="item">
           {{$t('MEDIA.INDEX')}}
         </a>
         >
