@@ -22,7 +22,7 @@
             </a>
           </li>
           <li>
-            <a class="common-anchor" href="/media" @click="navShow = false">
+            <a class="common-anchor" href="#/media" @click="navShow = false">
               {{$t('HEADER.MEDIA')}}
             </a>
           </li>

@@ -6,7 +6,7 @@
           {{$t('MEDIA.INDEX')}}
         </a>
         >
-        <a href="/media" class="item">
+        <a href="#/media" class="item">
           {{$t('MEDIA.MEDIA')}}
         </a>
         >

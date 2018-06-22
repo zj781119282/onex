@@ -17,7 +17,7 @@ import detail from 'page/media/components/detail/detail.vue'
 Vue.use(Router);
 
 const router = new Router({
-  mode: 'history',
+  //mode: 'history',
   routes: [
     {
       path: '/',
