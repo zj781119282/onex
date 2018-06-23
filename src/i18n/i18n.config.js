@@ -8,6 +8,7 @@ import help_en from './en_US/help.json'
 import support_en from './en_US/support.json'
 import transaction_en from './en_US/transaction.json'
 import media_en from './en_US/media.json'
+import manager_en from './en_US/manager.json'
 // 引入中文文件
 import header_cn from './zh_CN/header.json'
 import index_cn from './zh_CN/index.json'
@@ -15,6 +16,7 @@ import help_cn from './zh_CN/help.json'
 import support_cn from './zh_CN/support.json'
 import transaction_cn from './zh_CN/transaction.json'
 import media_cn from './zh_CN/media.json'
+import manager_cn from './zh_CN/manager.json'
 
 Vue.use(VueI18n);
 
@@ -57,6 +59,7 @@ export const i18n = new VueI18n({
       help_cn,
       support_cn,
       transaction_cn,
+      manager_cn,
     ),
     'en_US': Object.assign(
       header_en,
@@ -65,6 +68,7 @@ export const i18n = new VueI18n({
       help_en,
       support_en,
       transaction_en,
+      manager_en,
     ),
   }
 });

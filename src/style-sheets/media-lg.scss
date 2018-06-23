@@ -7,7 +7,7 @@
   .col-lg-7 { width: 58.333333%; }.col-lg-8 { width: 66.666667% }.col-lg-9 { width: 75% }.col-lg-10 { width: 83.333333% }.col-lg-11 { width: 91.666667% }.col-lg-12 { width: 100% }
 
   .hide-lg {
-    display: none;
+    display: none!important;
   }
 
   .visible-lg {

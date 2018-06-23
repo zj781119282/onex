@@ -1,0 +1,46 @@
+@import "./../../../../style-sheets/theme";
+@import "./../../../../style-sheets/mixin";
+
+.news-editor {
+  .container {
+    margin: 0 auto;
+    label {
+      input {
+        display: block;
+        width: 100%;
+        border: 1px solid $light-border;
+        &:focus {
+          border-color: $theme-color;
+        }
+      }
+      select {
+        display: block;
+        width: 100%;
+        border: 1px solid $light-border;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1081px) {
+  .news-editor {
+    min-height: calc(100vh - 70px);
+    padding: 100px 0;
+    .container {
+      width: 1200px;
+      label {
+        .head {
+          font-size: 18px;
+        }
+        input, select {
+          margin: 20px 0;
+          padding: 10px 20px;
+          border-radius: 6px;
+        }
+      }
+      .common-btn {
+        margin-top: 40px;
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 999;
+  z-index: 99999;
   background-color: $light-grey-background;
   @include wh(100vw, 100vh);
   @include icon-custom('./../../assets/loading.gif',center, center, 18px, 18px);

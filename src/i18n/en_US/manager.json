@@ -1,0 +1,12 @@
+{
+  "MANAGER": {
+    "NEWS": {
+      "TITLE": "标题",
+      "STATUS": "状态",
+      "CONTENT": "内容",
+      "IMAGE": "图片",
+      "ENABLE": "上线",
+      "DELAY": "推迟"
+    }
+  }
+}
