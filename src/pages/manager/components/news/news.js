@@ -19,7 +19,6 @@ export default {
   methods: {
     getImage(src) {
       this.imageUrl = src;
-      console.log('outer: ' + this.imageUrl);
     },
     uploadNews() {
       const title = this.title;
@@ -41,6 +40,5 @@ export default {
     if (secret === 'superadmin') {
       this.isManager = true;
     }
-    console.log(secret);
   }
 }
