@@ -25,6 +25,9 @@ export default function () {
     getNewsList(page = 0) {
       return getFunction(urls.getNewsList, { page });
     },
+    getRecommendList(page = 0) {
+      return getFunction(urls.getRecommendList, { page });
+    },
     getNewsDetail(id) {
       return getFunction(urls.getNewsDetail, { id });
     }

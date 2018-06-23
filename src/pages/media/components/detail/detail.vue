@@ -22,6 +22,7 @@
         <p class="date">{{date}}</p>
         <article v-html="detail" class="news-detail"></article>
       </div>
+      <recommend class="hide-xs"></recommend>
     </div>
   </section>
 </template>

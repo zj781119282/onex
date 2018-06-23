@@ -14,6 +14,7 @@ export default {
       title: '',
       content: '',
       desc: '',
+      recommend: -1,
       status: 1,
       imageUrl: '',
     }
@@ -27,6 +28,7 @@ export default {
       const content = this.content;
       const description = this.desc;
       const status = this.status;
+      const recommend = this.recommend;
       const image = this.imageUrl;
       if (!title|| !description || !content || !image) return;
 
@@ -35,6 +37,7 @@ export default {
         content,
         description,
         status,
+        recommend,
         image,
       };
 

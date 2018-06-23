@@ -33,6 +33,8 @@
           </li>
         </ul>
       </div>
+
+      <recommend class="hide-xs"></recommend>
     </div>
   </section>
 </template>

@@ -2,6 +2,7 @@
 @import "./../../../../style-sheets/mixin";
 
 .news-list {
+  position: relative;
   margin: 0 auto;
   .container {
     ul {

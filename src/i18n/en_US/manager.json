@@ -4,6 +4,7 @@
       "TITLE": "标题",
       "DESC": "描述",
       "STATUS": "状态",
+      "RECOMMEND": "是否推荐",
       "CONTENT": "内容",
       "IMAGE": "图片",
       "ENABLE": "上线",

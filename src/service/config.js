@@ -8,6 +8,7 @@ export default {
   host,
   urls: {
     getNewsList: '/article/list',
+    getRecommendList: '/article/list_recommend',
     getNewsDetail: '/article/get',
     addNews: '/article/add',
     setNewsStatus: '/article/status',

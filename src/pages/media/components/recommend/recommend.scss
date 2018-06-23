@@ -1,0 +1,30 @@
+@import "../../../../style-sheets/theme";
+@import "../../../../style-sheets/mixin";
+
+.recommend-list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px 20px 30px;
+  background-color: #fafafa;
+  @include wh(225px, auto);
+  h5 {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+  .article {
+    padding: 10px 0;
+    a {
+      width: 100%;
+      color: $theme-color;
+    }
+    span {
+      font-size: 12px;
+      color: $desc-color;
+    }
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $light-border;
+    }
+  }
+}

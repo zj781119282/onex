@@ -2,9 +2,13 @@ import list_cn from './../../news/zh_CN/news'
 import list_en from './../../news/en_US/news'
 import getData from 'service/getData'
 import { timeStampToDate } from 'service/timeTransfer'
+import recommend from './../recommend/recommend.vue'
 
 export default {
   name: 'media-detail',
+  components: {
+    recommend,
+  },
   data() {
     return {
       title: '',

@@ -25,6 +25,17 @@
         </select>
       </label>
 
+
+      <label>
+        <span class="head">
+          {{$t('MANAGER.NEWS.RECOMMEND')}}
+        </span>
+        <select name="recommend" id="recommend" v-model="recommend">
+          <option value="1">是</option>
+          <option value="-1">否</option>
+        </select>
+      </label>
+
       <label>
         <span class="head" style="margin-bottom: 20px;">
           {{$t('MANAGER.NEWS.CONTENT')}}
