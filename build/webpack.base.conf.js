@@ -29,6 +29,7 @@ module.exports = {
       '@': resolve('src'),
       'page': path.resolve(__dirname, '../src/pages'),
       'comp': path.resolve(__dirname, '../src/components'),
+      'service': path.resolve(__dirname, '../src/service'),
     }
   },
   module: {

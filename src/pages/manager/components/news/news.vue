@@ -8,6 +8,13 @@
         <input type="text" id="title" v-model="title" :placeholder="$t('MANAGER.NEWS.TITLE')"/>
       </label>
 
+      <label for="desc">
+        <span class="head">
+          {{$t('MANAGER.NEWS.DESC')}}
+        </span>
+        <input type="text" id="desc" v-model="desc" :placeholder="$t('MANAGER.NEWS.DESC')"/>
+      </label>
+
       <label>
         <span class="head">
           {{$t('MANAGER.NEWS.STATUS')}}
@@ -33,7 +40,7 @@
       </label>
 
       <div class="btn-group">
-        <a href="javscript:;" class="common-btn">
+        <a href="javscript:;" @click="uploadNews" class="common-btn">
           保存
         </a>
       </div>

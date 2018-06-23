@@ -18,13 +18,13 @@
           <li v-for="item in list">
             <figure class="clearfix">
               <a href="javascript:;" class="anchor hide-lg" @click="goDetail(item.id)"></a>
-              <img class="fl" :src="item.thumbnail" :alt="item.title" :title="item.title"/>
+                <img class="fl" :src="item.image" :alt="item.title" :title="item.title"/>
               <div class="figure-content fl">
                 <h4 class="ellipsis">
                   {{item.title}}
                   <span></span>
                 </h4>
-                <p class="ellipsis">{{item.brief}}</p>
+                <p class="ellipsis">{{item.description}}</p>
                 <a href="javascript:;" class="hide-xs" @click="goDetail(item.id)">
                   More >
                 </a>
