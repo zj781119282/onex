@@ -40,7 +40,7 @@
         <span class="head" style="margin-bottom: 20px;">
           {{$t('MANAGER.NEWS.CONTENT')}}
         </span>
-        <ueditor v-model="content"></ueditor>
+        <ueditor v-model="content" @ready="getEditNews"></ueditor>
       </label>
 
       <label>

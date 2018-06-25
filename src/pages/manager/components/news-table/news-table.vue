@@ -1,6 +1,7 @@
 <template>
   <section class="news-table">
     <div class="container">
+      <a href="javascript:;" class="common-btn" @click="addNews">新增 +</a><br/>
       <table cellspacing="0" cellpadding="0">
         <thead>
           <tr>

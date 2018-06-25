@@ -9,6 +9,14 @@ export default {
     }
   },
   methods: {
+    addNews() {
+      this.$router.push({
+        path: '/manager/news',
+        query: {
+          secret: 'superadmin',
+        },
+      });
+    },
     getAllNews() {
       getData().getAllNews().then(res => {
         this.list = res.data.list;

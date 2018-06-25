@@ -1,5 +1,6 @@
 import getData from 'service/getData'
 import recommend from './../recommend/recommend.vue'
+import { timeStampToDate } from 'service/timeTransfer'
 
 export default {
   name: 'media-list',
@@ -20,6 +21,9 @@ export default {
         }
         this.list = res.data.list;
       });
+    },
+    timeTransfer(time) {
+      return timeStampToDate(time);
     },
     goDetail(id) {
       this.$router.push({

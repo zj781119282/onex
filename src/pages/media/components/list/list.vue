@@ -24,7 +24,8 @@
                   {{item.title}}
                   <span></span>
                 </h4>
-                <p>{{item.description}}</p>
+                <p class="hide-xs">{{item.description}}</p>
+                <p class="hide-lg">{{timeTransfer(item.createDate)}}</p>
                 <a href="javascript:;" class="hide-xs" @click="goDetail(item.id)">
                   More >
                 </a>

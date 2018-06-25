@@ -25,7 +25,10 @@ export default {
     getImage(src) {
       this.imageUrl = src;
     },
-    getEditNews(id) {
+    getEditNews() {
+      const id = this.$route.query.id;
+      if (!id) return;
+
       getData().getNewsDetail(id).then(res => {
         if (!res.result) return;
         const data = res.data;
@@ -80,10 +83,6 @@ export default {
     const id = this.$route.query.id;
     if (secret === 'superadmin') {
       this.isManager = true;
-    }
-    if (id) {
-      this.id = id;
-      this.getEditNews(id);
     }
   },
 }

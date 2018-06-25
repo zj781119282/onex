@@ -21,6 +21,9 @@
     padding: 100px 0;
     .container {
       width: 1200px;
+      .common-btn {
+        margin-bottom: 20px;
+      }
       table {
         th, td {
           max-width: 300px;
