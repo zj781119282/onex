@@ -22,9 +22,6 @@ export default {
     }
   },
   methods: {
-    getImage(src) {
-      this.imageUrl = src;
-    },
     getEditNews() {
       const id = this.$route.query.id;
       if (!id) return;

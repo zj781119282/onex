@@ -35,7 +35,7 @@ export default {
       const uploader = new plupload.Uploader({
         runtimes : 'html5,flash,silverlight,html4',
         browse_button : 'selectUploadFiles',
-        container: document.getElementById('imageUploader'),
+        container: $('#imageUploader')[0],
         url : 'http://' + _this.ossInfo.bucket_name + '.oss-ap-southeast-1.aliyuncs.com/',
         headers: {
           'Access-Control-Allow-Origin': '*',
@@ -74,13 +74,19 @@ export default {
             progress.css('width', `${file.percent}%`);
           },
           FileUploaded(up, file, info) {
+
             if (info.status >= 200 || info.status < 200) {
-              _this.imageUrl += file.name;
-              const imgSrc = _this.imageUrl;
+              const imgSrc = _this.imageUrl + file.name;
               $('#' + file.id).html('');
               $('.preview-area').show();
-              $('#imagePreview').html(`<img src="${imgSrc}"/>`);
-              _this.$emit('src', imgSrc);
+              $('#imagePreview').append(`
+                <figure>
+                  <div class="img">
+                    <img src="${imgSrc}"/>
+                  </div>
+                  <figcaption>${imgSrc}</figcaption>
+                </figure>
+              `);
             } else {
               $('#' + file.id).html(info.response);
             }

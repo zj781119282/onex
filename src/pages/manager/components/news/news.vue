@@ -36,6 +36,13 @@
         </select>
       </label>
 
+      <label for="thumbnail">
+        <span class="head">
+          缩略图地址
+        </span>
+        <input type="text" id="thumbnail" v-model="imageUrl" placeholder="缩略图地址"/>
+      </label>
+
       <label>
         <span class="head" style="margin-bottom: 20px;">
           {{$t('MANAGER.NEWS.CONTENT')}}
@@ -47,7 +54,7 @@
         <span class="head" style="margin: 20px 0;">
           {{$t('MANAGER.NEWS.IMAGE')}}
         </span>
-        <image-uploader @src="getImage"></image-uploader>
+        <image-uploader></image-uploader>
       </label>
 
       <div class="btn-group">
