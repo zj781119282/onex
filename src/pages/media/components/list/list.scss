@@ -8,6 +8,14 @@
     ul {
       li {
         figure {
+          position: relative;
+          a.anchor {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+            @include wh(100%, 100%);
+          }
           h4 {
             position: relative;
             font-weight: bolder;
@@ -36,13 +44,6 @@
         li {
           margin-bottom: .5rem;
           figure {
-            position: relative;
-            a.anchor {
-              position: absolute;
-              left: 0;
-              top: 0;
-              @include wh(100%, 100%);
-            }
             img {
               @include wh(2.4rem, 1.6rem);
             }

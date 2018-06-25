@@ -1,0 +1,33 @@
+@import "./../../../../style-sheets/theme";
+@import "./../../../../style-sheets/mixin";
+
+.news-table {
+  .container {
+    margin: 0 auto;
+    table {
+      width: 100%;
+      td {
+        a {
+          color: $theme-color;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1081px) {
+  .news-table {
+    min-height: calc(100vh - 70px);
+    padding: 100px 0;
+    .container {
+      width: 1200px;
+      table {
+        th, td {
+          max-width: 300px;
+          padding: 10px 20px;
+          border: 1px solid $light-border;
+        }
+      }
+    }
+  }
+}

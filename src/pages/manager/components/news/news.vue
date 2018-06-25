@@ -54,6 +54,9 @@
         <a href="javscript:;" @click="uploadNews" class="common-btn">
           保存
         </a>
+        <a href="javascript:;" @click="cancel" class="common-btn">
+          取消
+        </a>
       </div>
     </div>
   </section>

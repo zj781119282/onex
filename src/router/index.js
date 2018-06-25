@@ -15,6 +15,7 @@ import transactionFail from 'page/help/components/transaction-fail/transaction-f
 import list from 'page/media/components/list/list.vue'
 import detail from 'page/media/components/detail/detail.vue'
 import news from 'page/manager/components/news/news.vue'
+import newsTable from 'page/manager/components/news-table/news-table.vue'
 
 Vue.use(Router);
 
@@ -95,13 +96,18 @@ const router = new Router({
       children: [
         {
           path: '/manager',
-          redirect: '/manager/news',
+          redirect: '/manager/news-table',
         },
         {
           path: '/manager/news',
           name: 'news',
           component: news,
-        }
+        },
+        {
+          path: '/manager/news-table',
+          name: 'news-table',
+          component: newsTable,
+        },
       ],
     },
   ],

@@ -17,14 +17,14 @@
         <ul>
           <li v-for="item in list">
             <figure class="clearfix">
-              <a href="javascript:;" class="anchor hide-lg" @click="goDetail(item.id)"></a>
+              <a href="javascript:;" class="anchor" @click="goDetail(item.id)"></a>
                 <img class="fl" :src="item.image" :alt="item.title" :title="item.title"/>
               <div class="figure-content fl">
                 <h4 class="ellipsis">
                   {{item.title}}
                   <span></span>
                 </h4>
-                <p class="ellipsis">{{item.description}}</p>
+                <p>{{item.description}}</p>
                 <a href="javascript:;" class="hide-xs" @click="goDetail(item.id)">
                   More >
                 </a>

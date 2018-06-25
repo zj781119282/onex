@@ -29,5 +29,14 @@ export default function () {
     addNews(params) {
       return postFunction(urls.addNews, params);
     },
+    setNewsStatus(params) {
+      return postFunction(urls.setNewsStatus, params);
+    },
+    setNewsRecommend(params) {
+      return postFunction(urls.setNewsRecommend, params);
+    },
+    deleteNews(params) {
+      return postFunction(urls.deleteNews, params);
+    },
   };
 };
