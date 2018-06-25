@@ -67,7 +67,9 @@ export default {
 
       if (this.id) {
         params.id = this.id;
+        console.log(params)
       }
+      console.log(params)
 
       postData().addNews(params).then(res => {
         alert(res.message);
@@ -80,6 +82,9 @@ export default {
     const id = this.$route.query.id;
     if (secret === 'superadmin') {
       this.isManager = true;
+    }
+    if (id) {
+      this.id = id;
     }
   },
 }
