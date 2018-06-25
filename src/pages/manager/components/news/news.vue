@@ -58,7 +58,7 @@
       </label>
 
       <div class="btn-group">
-        <a href="javscript:;" @click="uploadNews" class="common-btn">
+        <a href="javascript:;" @click="uploadNews" class="common-btn">
           保存
         </a>
         <a href="javascript:;" @click="cancel" class="common-btn">
