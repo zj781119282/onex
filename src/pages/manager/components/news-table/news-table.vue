@@ -1,6 +1,6 @@
 <template>
   <section class="news-table">
-    <div class="container">
+    <div class="container" v-if="isManager">
       <a href="javascript:;" class="common-btn" @click="addNews">新增 +</a><br/>
       <table cellspacing="0" cellpadding="0">
         <thead>

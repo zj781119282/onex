@@ -5,6 +5,7 @@ export default {
   name: 'news-table',
   data() {
     return {
+      isManager: false,
       list: [],
     }
   },
