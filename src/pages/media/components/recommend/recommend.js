@@ -26,6 +26,7 @@ export default {
         path: '/media/detail',
         query: { id, },
       });
+      location.reload();
     },
   },
   mounted() {
