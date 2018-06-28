@@ -73,6 +73,9 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       {
         from: './favicon.ico',
       },
+      {
+        from: './demo.html',
+      },
     ]),
   ],
 })
