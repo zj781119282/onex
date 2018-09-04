@@ -22,7 +22,7 @@ const identification = {
 };
 
 export const androidUrl = 'https://www.pgyer.com/onexx';
-export const iosUrl = 'https://www.pgyer.com/onex';
+export const iosUrl = 'https://fir.im/iosonex';
 
 export function downloadApp() {
   if (identification.isMobile()) {
